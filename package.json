@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.dev.js --open",
-    "build": "webpack --config webpack.prod.js"
+    "start": "webpack-dev-server --config webpack.dev.js --open prettier",
+    "build": "webpack --config webpack.prod.js",
+    "prettier": "prettier --write"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.5.3",
     "node-sass": "^7.0.1",
+    "prettier": "2.5.1",
     "sass-loader": "^12.4.0",
     "style-loader": "^3.3.1",
     "webpack": "^5.68.0",
