@@ -1,0 +1,15 @@
+.main {
+  position: relative;
+  width: 75vw;
+  transition: width 1s ease-in-out;
+}
+
+.main-active {
+  width: 90vw;
+  transition: width 1s ease-in-out;
+}
+
+.page {
+  width: 90%;
+  margin: 100px auto 0;
+}

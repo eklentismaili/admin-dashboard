@@ -1,12 +1,6 @@
-@import "./vendors/bootstrap.scss";
-
-@font-face {
-    font-family: "Montserrat";
-    src: url(./font/Montserrat-Regular.ttf);
-  }
-
-
-body {
-    font-family: "Montserrat";
-    background: $primary;
-}
+@import './vendors/bootstrap.scss';
+@import './utils/variables.scss';
+@import './utils/global.scss';
+@import './layout/sidebar.scss';
+@import './layout/navbar.scss';
+@import './layout/main.scss';
