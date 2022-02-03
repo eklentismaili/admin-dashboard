@@ -11,7 +11,11 @@ module.exports = {
                       'css-loader',  // 2. Turns css into common js
                       "sass-loader" // 1. Turns sass into css
                 ]
-            }
+            },
+            {
+                test: /\.html$/,
+                use: ["html-loader"]
+            },
         ]
     },
     plugins: [new HtmlWebpackPlugin({
