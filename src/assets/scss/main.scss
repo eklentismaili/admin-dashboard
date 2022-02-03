@@ -1,5 +1,12 @@
-@import "~bootstrap/scss/bootstrap";
+@import "./vendors/bootstrap.scss";
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(./font/Montserrat-Regular.ttf);
+  }
+
 
 body {
-    background: purple;
+    font-family: "Montserrat";
+    background: $primary;
 }
