@@ -2,6 +2,8 @@
   background: $black;
   padding: 20px 5%;
   height: 80px;
+  position: sticky;
+  top: 0;
   .nav {
     height: 100%;
     display: flex;

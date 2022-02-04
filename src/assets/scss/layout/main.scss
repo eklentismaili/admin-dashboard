@@ -2,6 +2,8 @@
   position: relative;
   width: 75vw;
   transition: width 1s ease-in-out;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 .main-active {
@@ -11,5 +13,16 @@
 
 .page {
   width: 90%;
+  height: 100vh;
   margin: 100px auto 0;
+}
+
+@media (max-width: 768px) {
+  .main {
+    width: 50vw;
+  }
+
+  .main-active {
+    width: 90vw;
+  }
 }
