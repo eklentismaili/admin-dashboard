@@ -63,6 +63,10 @@ header {
         background-color: $orange;
       }
     }
+
+    .logo img {
+      width: 50px;
+    }
   }
 
   .right-nav {
@@ -74,7 +78,7 @@ header {
 
     .avatar {
       img {
-        width: 32px;
+        width: 35px;
       }
     }
   }

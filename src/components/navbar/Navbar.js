@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Avatar from '../../assets/images/icons/profile.png';
+import Logo from '../../assets/images/logo.gif';
 
 function Navbar({ sideBar, parentCallbackNav }) {
   function handleSidebar() {
@@ -28,7 +29,9 @@ function Navbar({ sideBar, parentCallbackNav }) {
               </div>
             </div>
             <div className="logo">
-              <Link to="/">Logo</Link>
+              <Link to="/">
+                <img src={Logo} />
+              </Link>
             </div>
           </div>
 
