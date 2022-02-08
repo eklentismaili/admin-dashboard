@@ -1,0 +1,39 @@
+.sidebar-wrapper {
+  position: fixed;
+  z-index: 2;
+  min-height: 100vh;
+  padding: 80px 5% 0;
+  background: $dark-purple;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+
+  .sidebar-links li {
+    margin: 35px 0;
+
+    :hover {
+      color: $orange;
+    }
+
+    .active-nav {
+      color: $orange;
+    }
+
+    svg {
+      width: 30px;
+    }
+  }
+}
+
+.sidebar-wrapper-active {
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+@media (max-width: 767px) {
+  .sidebar-wrapper {
+    width: unset;
+    .link-text {
+      display: none;
+    }
+  }
+}

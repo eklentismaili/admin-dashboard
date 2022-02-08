@@ -1,11 +1,8 @@
-import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-function Navbar() {
-  const [sidebar, setSidebar] = useState(false);
-
+function Navbar({ sideBar, parentCallbackNav }) {
   function handleSidebar() {
-    setSidebar(prevState => !prevState);
+    parentCallbackNav(!sideBar);
   }
 
   return (
@@ -15,17 +12,17 @@ function Navbar() {
           <div className="left-nav">
             <div className="sidebar-btn-wrapper">
               <div
-                className={`sidebar-btn ${sidebar ? 'sidebar-btn-active' : ''}`}
+                className={`sidebar-btn ${sideBar ? 'sidebar-btn-active' : ''}`}
                 onClick={handleSidebar}
               >
                 <span
-                  className={`btn-line ${sidebar ? 'btn-line-active' : ''}`}
+                  className={`btn-line ${sideBar ? 'btn-line-active' : ''}`}
                 ></span>
                 <span
-                  className={`btn-line ${sidebar ? 'btn-line-active' : ''}`}
+                  className={`btn-line ${sideBar ? 'btn-line-active' : ''}`}
                 ></span>
                 <span
-                  className={`btn-line ${sidebar ? 'btn-line-active' : ''}`}
+                  className={`btn-line ${sideBar ? 'btn-line-active' : ''}`}
                 ></span>
               </div>
             </div>
