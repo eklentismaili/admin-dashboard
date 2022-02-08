@@ -3,6 +3,7 @@ import Navbar from '../navbar/Navbar';
 import Sidebar from '../sidebar/Sidebar';
 import Overlay from '../overlay/Overlay';
 import Routes from '../../app/Routes';
+import Footer from '../footer/Footer';
 
 function Layout() {
   const [sidebarStatus, setSidebarStatus] = useState(false);
@@ -24,6 +25,7 @@ function Layout() {
       />
       {sidebarStatus ? <Overlay /> : ''}
       <Routes />
+      <Footer />
     </>
   );
 }

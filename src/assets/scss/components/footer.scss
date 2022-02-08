@@ -1,0 +1,15 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  background: $dark-purple;
+  width: 100%;
+  z-index: 6;
+  padding: 20px 5%;
+  .copyright-text {
+    margin: 0;
+    .copyright_owner {
+      padding-left: 10px;
+      color: $orange;
+    }
+  }
+}
