@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import Avatar from '../../assets/images/icons/profile.png';
 
 function Navbar({ sideBar, parentCallbackNav }) {
   function handleSidebar() {
@@ -33,7 +34,9 @@ function Navbar({ sideBar, parentCallbackNav }) {
 
           <div className="right-nav">
             <div className="locale">Lang</div>
-            <div className="avatar">Avatar</div>
+            <div className="avatar">
+              <img src={Avatar} alt="Avatar" />
+            </div>
             <div className="settings">Settings</div>
           </div>
         </nav>
