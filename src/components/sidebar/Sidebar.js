@@ -14,7 +14,6 @@ function Sidebar({ sideBar, parentCallbackSidebar }) {
 
   useClickOutside(modalRef, () => {
     if (sideBar) parentCallbackSidebar(false);
-    console.log('here');
   });
 
   return (

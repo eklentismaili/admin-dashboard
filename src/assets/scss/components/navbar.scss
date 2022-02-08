@@ -71,14 +71,14 @@ header {
 
   .right-nav {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     > div {
       padding-left: 10px;
     }
 
     .avatar {
       img {
-        width: 35px;
+        width: 30px;
       }
     }
   }
