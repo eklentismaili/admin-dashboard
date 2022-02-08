@@ -1,0 +1,10 @@
+.table {
+  background: $medium-purple;
+  border: 1px solid $orange !important;
+  color: $light-purple;
+
+  td,
+  th {
+    border: 1px solid $orange;
+  }
+}

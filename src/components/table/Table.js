@@ -7,8 +7,8 @@ function Table({ columns, data }) {
     tableInstance;
 
   return (
-    <table {...getTableProps()}>
-      <thead>
+    <table {...getTableProps()} className="table">
+      <thead className="table-head">
         {
           // Loop over the header rows
           headerGroups.map(headerGroup => (
@@ -32,7 +32,7 @@ function Table({ columns, data }) {
       </thead>
 
       {/* Apply the table body props */}
-      <tbody {...getTableBodyProps()}>
+      <tbody {...getTableBodyProps()} className="table-body">
         {
           // Loop over the table rows
           rows.map(row => {

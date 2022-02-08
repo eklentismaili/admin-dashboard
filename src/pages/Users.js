@@ -2,6 +2,7 @@ import { useEffect, useState, useMemo } from 'react';
 import { usersColumns } from '../tableColumns/usersColumns';
 import axios from 'axios';
 import Table from '../components/table/Table';
+import Breadcrumb from '../components/breadcrumb/Breadcrumb';
 
 function Users() {
   const [usersData, setUsersData] = useState([]);
@@ -14,13 +15,12 @@ function Users() {
   async function fetchUsersData() {
     const res = await axios.get(`https://reqres.in/api/users`);
     setUsersData(res.data.data);
-    console.log(res);
     setLoading(false);
   }
 
   return (
     <div className="page">
-      Users
+      <Breadcrumb title={'Users'} />
       <Table columns={usersColumns} data={usersData} />
     </div>
   );
