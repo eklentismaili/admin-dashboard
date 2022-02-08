@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import Locale from '../locale/Locale';
 import Avatar from '../../assets/images/icons/profile.png';
 import Logo from '../../assets/images/logo.gif';
 
@@ -36,7 +37,9 @@ function Navbar({ sideBar, parentCallbackNav }) {
           </div>
 
           <div className="right-nav">
-            <div className="locale">Lang</div>
+            <div className="locale">
+              <Locale />
+            </div>
             <div className="avatar">
               <img src={Avatar} alt="Avatar" />
             </div>
