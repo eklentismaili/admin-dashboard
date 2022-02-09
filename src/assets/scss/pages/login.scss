@@ -1,0 +1,13 @@
+.login-wrapper {
+  position: absolute;
+  z-index: 6;
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url('../../assets/images/pages/login.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

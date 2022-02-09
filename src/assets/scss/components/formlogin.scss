@@ -1,0 +1,49 @@
+.form {
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 0;
+  border-radius: 5px;
+  width: 50%;
+  margin: 0 auto;
+
+  label,
+  input {
+    margin-bottom: 10px;
+  }
+
+  label {
+    margin-left: 5%;
+    color: $medium-purple;
+  }
+
+  .form-input {
+    padding: 10px;
+    width: 90%;
+    margin: 0 auto 25px;
+    border-radius: 5px;
+    border: 1px solid $light-purple;
+    font-size: 14px;
+  }
+
+  .form-btn {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+    border-radius: 5px;
+    background: $medium-purple;
+    border: 1px solid $light-purple;
+    color: $light-purple;
+  }
+  .form-btn:hover {
+    background: $light-purple;
+    border: 1px solid $medium-purple;
+    color: $medium-purple;
+  }
+}
+
+@media (max-width: 767px) {
+  .form {
+    width: 100%;
+  }
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Routes as ReactRoutes, Route } from 'react-router-dom';
 import Home from '../pages/Home';
+import Login from '../pages/Login';
 
 const LazyAbout = React.lazy(() => import('../pages/About'));
 const LazyContact = React.lazy(() => import('../pages/Contact'));
@@ -13,6 +14,7 @@ const Routes = () => {
     <React.Suspense fallback="Loading...">
       <ReactRoutes>
         <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
         <Route path="about" element={<LazyAbout />} />
         <Route path="/contact" element={<LazyContact />} />
         <Route path="/users" element={<LazyUsers />} />
