@@ -5,8 +5,10 @@
 
 body {
   font-family: 'Montserrat';
-  overflow-y: hidden;
-  background: $black;
+  background-image: url('../../assets/images/animated-min.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   color: $light-purple;
 }
 
