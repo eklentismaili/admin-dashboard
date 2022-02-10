@@ -1,0 +1,27 @@
+.no-match-wrapper {
+  position: fixed;
+  min-height: 100vh;
+  min-width: 100vw;
+  z-index: 7;
+  background: #0f012e;
+  .no-match-header {
+    padding: 40px 0;
+    font-weight: 700;
+    color: $orange;
+  }
+
+  .no-match-button {
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    color: $orange;
+    border: 1px solid $orange;
+    background: $light-purple;
+  }
+
+  .no-match-button:hover {
+    color: $light-purple;
+    border: 1px solid $light-purple;
+    background: $orange;
+  }
+}

@@ -4,6 +4,7 @@ import { useAuth } from '../providers/Auth';
 import Home from '../pages/Home';
 import Login from '../pages/Login';
 import PrivateRoute from './PrivateRoute';
+import NoMatch from '../pages/NoMatch';
 
 const LazyAbout = React.lazy(() => import('../pages/About'));
 const LazyContact = React.lazy(() => import('../pages/Contact'));
@@ -50,6 +51,7 @@ const Routes = () => {
             </PrivateRoute>
           }
         />
+        <Route path="*" element={<NoMatch />} />
       </ReactRoutes>
     </React.Suspense>
   );
