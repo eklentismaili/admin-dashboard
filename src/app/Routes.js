@@ -1,6 +1,7 @@
 import React from 'react';
 import { Routes as ReactRoutes, Route } from 'react-router-dom';
 import { useAuth } from '../providers/Auth';
+import { Navigate } from 'react-router';
 import Home from '../pages/Home';
 import Login from '../pages/Login';
 import PrivateRoute from './PrivateRoute';
@@ -18,7 +19,10 @@ const Routes = () => {
   return (
     <React.Suspense fallback="Loading...">
       <ReactRoutes>
-        <Route path="/login" element={<Login />} />
+        <Route
+          path="/login"
+          element={auth.user ? <Navigate to="/" /> : <Login />}
+        />
         <Route
           path="/"
           element={
