@@ -1,9 +1,12 @@
 import Layout from '../components/layout/Layout';
+import AuthProvider from '../providers/Auth';
 
 export default function App() {
   return (
-    <div className="app">
-      <Layout />
-    </div>
+    <AuthProvider>
+      <div className="app">
+        <Layout />
+      </div>
+    </AuthProvider>
   );
 }
