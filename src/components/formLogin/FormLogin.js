@@ -1,10 +1,14 @@
 import { useState } from 'react';
+import axios from 'axios';
+import Alert from '../alert/Alert';
 
 function FormLogin() {
   const [form, setForm] = useState({
     email: '',
     password: '',
   });
+
+  const [formError, setFormError] = useState(null);
 
   const handleChange = e => {
     const name = e.target.name;
@@ -14,7 +18,14 @@ function FormLogin() {
 
   const handleSubmit = e => {
     e.preventDefault();
-    console.log(form);
+    const res = axios
+      .post(`https://reqres.in/api/login`, form)
+      .then(res => {
+        console.log(res);
+      })
+      .catch(err => {
+        setFormError(err.response.data.error);
+      });
   };
 
   return (
@@ -25,7 +36,6 @@ function FormLogin() {
         type="email"
         placeholder="Email"
         name="email"
-        required
         value={form.email || ''}
         onChange={handleChange}
       />
@@ -35,10 +45,10 @@ function FormLogin() {
         type="password"
         placeholder="Password"
         name="password"
-        required
         value={form.password || ''}
         onChange={handleChange}
       />
+      {formError ? <Alert children={formError} /> : ''}
       <button type="submit" className="form-btn">
         Send
       </button>

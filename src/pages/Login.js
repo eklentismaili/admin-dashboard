@@ -10,8 +10,7 @@ function Login() {
               Please Login to be redirected to the homepage
             </h3>
             <p className="text-center mb-5">
-              Put dummy data on the input fields it will anyway be accepted as
-              valid data.
+              Put 'eve.holt@reqres.in' as the email, and whatever as a password.
             </p>
             <FormLogin />
           </div>
