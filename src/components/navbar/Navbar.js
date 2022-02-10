@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import Arrow from '../../assets/images/icons/logout.svg';
 import { useAuth } from '../../providers/Auth';
 import Locale from '../locale/Locale';
 import Avatar from '../../assets/images/icons/profile.png';
@@ -57,7 +58,7 @@ function Navbar({ sideBar, parentCallbackNav }) {
                   logOut();
                 }}
               >
-                Log Out
+                <img src={Arrow} />
               </button>
             </div>
           </div>

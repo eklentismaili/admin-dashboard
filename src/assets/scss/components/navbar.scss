@@ -81,5 +81,15 @@ header {
         width: 30px;
       }
     }
+
+    .settings {
+      button {
+        background: none;
+        border: none;
+        img {
+          width: 20px;
+        }
+      }
+    }
   }
 }
