@@ -28,7 +28,8 @@ function FormLogin() {
       .post(`https://reqres.in/api/login`, form)
       .then(res => {
         setFormError(null);
-        auth.login(res.data.token);
+        localStorage.setItem('token', `${res.data.token}`);
+        auth.login(localStorage.getItem('token'));
         setTimeout(() => {
           navigate('/');
         }, 1000);
